@@ -1,4 +1,4 @@
-baseURL = 'https://<your-github-username>.github.io/'
+baseURL = 'https://bharathpurtipli.github.io/'
 languageCode = 'en-us'
 title = 'Bharath Purtipli'
 theme = 'PaperMod'
@@ -40,16 +40,16 @@ theme = 'PaperMod'
 
     [[params.socialIcons]]
         name = 'orcid'          # renders the ORCID logo via PaperMod built-in
-        url  = 'https://orcid.org/0000-0000-0000-0000'   # replace with your ORCID
+        url  = 'https://orcid.org/0009-0007-3838-1362'   # replace with your ORCID
 
     [[params.socialIcons]]
         name = 'googlescholar'
-        url  = 'https://scholar.google.com/citations?user=YOURID' # replace
+        url  = 'https://scholar.google.com/citations?user=J--XLiUAAAAJ' # replace
 
     # University profile — use the generic "link" icon
     [[params.socialIcons]]
         name = 'link'
-        url  = 'https://www.professorship.tum.de/your-profile'   # replace
+        url  = 'https://www.ce.cit.tum.de/en/lnt/people/doctoral-researchers/purtipli/'   # replace
 
 [menu]
     [[menu.main]]
