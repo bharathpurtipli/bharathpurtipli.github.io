@@ -1,0 +1,10 @@
+<div class="pub-entry">
+  <p class="pub-title">{{ .Get "title" }}</p>
+  <p class="pub-authors">{{ .Get "authors" | markdownify }}</p>
+  <p class="pub-venue">{{ .Get "venue" | markdownify }}, {{ .Get "year" }}</p>
+  <span class="pub-links">
+    {{ with .Get "doi"   }}<a href="{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+    {{ with .Get "arxiv" }}<a href="{{ . }}" target="_blank" rel="noopener">arXiv</a>{{ end }}
+    {{ with .Get "pdf"   }}<a href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
+  </span>
+</div>

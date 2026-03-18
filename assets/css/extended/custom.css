@@ -1,0 +1,118 @@
+/* ─── Timeline ─────────────────────────────────────────────────────────── */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin: 1.5rem 0 2.5rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.55rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.timeline-marker {
+  position: absolute;
+  left: -2rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--theme);
+  border-radius: 50%;
+}
+.timeline-content {
+  flex: 1;
+}
+.timeline-date {
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--secondary);
+  display: block;
+  margin-bottom: 0.15rem;
+}
+.timeline-title {
+  margin: 0 0 0.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.timeline-place {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.timeline-body {
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+/* ─── Publications ─────────────────────────────────────────────────────── */
+.pub-entry {
+  border-left: 3px solid var(--primary);
+  padding: 0.6rem 0 0.6rem 1rem;
+  margin-bottom: 1.4rem;
+}
+.pub-title {
+  font-weight: 600;
+  margin: 0 0 0.2rem;
+}
+.pub-authors, .pub-venue {
+  font-size: 0.88rem;
+  margin: 0 0 0.2rem;
+  color: var(--secondary);
+}
+.pub-links a {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.6rem;
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  padding: 1px 6px;
+  text-decoration: none;
+  color: var(--primary);
+}
+.pub-links a:hover {
+  background: var(--primary);
+  color: var(--theme);
+}
+
+/* ─── Talks ─────────────────────────────────────────────────────────────── */
+.talk-entry {
+  margin-bottom: 1.2rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--border);
+}
+.talk-type {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--code-bg);
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-bottom: 0.3rem;
+  display: inline-block;
+}
+.talk-title {
+  font-weight: 600;
+  margin: 0.3rem 0 0.1rem;
+}
+.talk-meta {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  margin: 0 0 0.3rem;
+}

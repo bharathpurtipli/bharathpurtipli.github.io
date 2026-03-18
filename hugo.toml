@@ -1,0 +1,69 @@
+baseURL = 'https://<your-github-username>.github.io/'
+languageCode = 'en-us'
+title = 'Bharath Purtipli'
+theme = 'PaperMod'
+
+[params]
+    defaultTheme = 'auto'
+    author = 'Bharath Purtipli'
+    description = 'Doctoral Researcher at TUM'
+    showReadingTime = false
+    hideFooter = false
+
+    [params.profileMode]
+        enabled = true
+        title = 'Bharath Purtipli'
+        subtitle = 'Doctoral Researcher · Technical University of Munich'
+        imageUrl = '/images/profile.jpg'   # place your photo at static/images/profile.jpg
+        imageTitle = 'Bharath Purtipli'
+        imageWidth = 120
+        imageHeight = 120
+
+        [[params.profileMode.buttons]]
+            name = 'About'
+            url = '/about/'
+        [[params.profileMode.buttons]]
+            name = 'CV'
+            url = '/cv/'
+        [[params.profileMode.buttons]]
+            name = 'Publications'
+            url = '/publications/'
+
+    # ── Social / contact icons ──────────────────────────────────────────────
+    [[params.socialIcons]]
+        name = 'LinkedIn'
+        url  = 'https://www.linkedin.com/in/bharath73p'
+
+    [[params.socialIcons]]
+        name = 'email'
+        url  = 'mailto:bharath.purtipli@tum.de'   # replace with your actual address
+
+    [[params.socialIcons]]
+        name = 'orcid'          # renders the ORCID logo via PaperMod built-in
+        url  = 'https://orcid.org/0000-0000-0000-0000'   # replace with your ORCID
+
+    [[params.socialIcons]]
+        name = 'googlescholar'
+        url  = 'https://scholar.google.com/citations?user=YOURID' # replace
+
+    # University profile — use the generic "link" icon
+    [[params.socialIcons]]
+        name = 'link'
+        url  = 'https://www.professorship.tum.de/your-profile'   # replace
+
+[menu]
+    [[menu.main]]
+        identifier = 'about'
+        name       = 'About'
+        url        = '/about/'
+        weight     = 1
+    [[menu.main]]
+        identifier = 'cv'
+        name       = 'CV'
+        url        = '/cv/'
+        weight     = 2
+    [[menu.main]]
+        identifier = 'publications'
+        name       = 'Publications'
+        url        = '/publications/'
+        weight     = 3

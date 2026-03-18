@@ -1,0 +1,8 @@
+<div class="talk-entry">
+  <span class="talk-type">{{ .Get "type" }}</span>
+  <p class="talk-title">{{ .Get "title" }}</p>
+  <p class="talk-meta">{{ .Get "event" }} · {{ .Get "location" }} · {{ .Get "date" }}</p>
+  {{ with .Get "slides" }}
+  <span class="pub-links"><a href="{{ . }}" target="_blank" rel="noopener">Slides</a></span>
+  {{ end }}
+</div>
